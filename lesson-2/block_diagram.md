@@ -6,7 +6,7 @@ Make a block diagram describing an embedded system you’d like to have or make.
 
 ## Assignment Submission
 
-The below hardware block diagram is a refined version of the one in the porevious submission. The main change concern the power supply part and the selection of the specific MCA that will be used for the project.
+The below hardware block diagram is a refined version of the one in the [porevious submission](https://github.com/mic0331/red-jellies/blob/main/lesson-1/README.md). The main change concern the power supply part and the selection of the specific MCA that will be used for the project.
 
 Smart fume extractor can automatically detects bad air quality, activate the fan at a speed that corresponds to the level of particulates. Automatically power on/off the device. They can record the time of execution of the device and predict a replacement cycle for the fume filter. Finally they can display the total execution time and a percentage of the filter saturation on a simple display.
 
