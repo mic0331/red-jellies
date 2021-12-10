@@ -51,5 +51,8 @@ int main(void) {
   // correspond to 'e' in ASCII
   printf("Write value %u, Read value %u \n", 'e', r_value);
   assert('e' == r_value);
+
+  sFLASH_EraseBulk();
+
   return 0;
 }
