@@ -34,7 +34,7 @@ The board contain all the typical peripherals SPI, I2C, UART, PWM and SMBUS
 
 ### Does it have a floating point unit?
 
-The corted M4 features a Floating point unit (FPU) single precision which supports all Arm single-precision data-rpocessing instructions and data types.
+The corted M4 features a Floating point unit (FPU) single precision which supports all Arm single-precision data-processing instructions and data types.
 
 ### If it has an ADC, what are the features?
 
