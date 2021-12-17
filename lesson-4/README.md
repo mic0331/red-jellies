@@ -12,4 +12,4 @@ In this project I am using interupts for both the GPIO and the Timer. The [`main
 In order to handle the debouncing of the board button I am leveraging the timer with a frequency of 10Hz to confirm the state of the button action.
 Finally I am using variable name in order to simplify the type of port and pin used by the different module. With this, each module (gpio, tim) can be easily used for other project.
 
-For reference I am also keeping the intial version of the code that was using a counter based approach. This version was not working as expected and it was not properly implemented as a `while` loop was kept in the callback of the GPIO interrupt.
+For reference I am also keeping the intial version of the code ([`mail.old.c`](https://github.com/mic0331/red-jellies/blob/main/lesson-4/nucleo-F401RE-blinky_interrupt_debouncing/Src/main.old.c)). This version was using a counter based approach. It was not working as expected and it was not properly implemented as a `while` loop was kept in the callback of the GPIO interrupt.
