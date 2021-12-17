@@ -8,6 +8,8 @@ Turn in your code with a comment or additional file answering the questions.
 
 ## Comments
 
+![Blinky](VID_20211217_101024.gif)
+
 In this project I am using interupts for both the GPIO and the Timer. The [`main.c`](https://github.com/mic0331/red-jellies/blob/main/lesson-4/nucleo-F401RE-blinky_interrupt_debouncing/Src/main.c) file is kept as minimal as possible.
 
 In order to handle the debouncing of the board button I am leveraging the timer with a frequency of 10Hz to confirm the state of the button action.
