@@ -8,27 +8,7 @@ Turn in your code with a comment or additional file answering the questions.
 
 ## Comments
 
-The main bulk of the code is located in the [main.c](https://github.com/mic0331/red-jellies/blob/main/lesson-4/nucleo-F401RE-blinky_interrupt_debouncing/Src/main.c) file.
-I decided to use the HAL but not cubeMx for this project - I defined some global PIN variable so that I can change their assignement easily.
-I included a uart.c file as part of the project but it is not used. This file is only there to help debugging.
-
-Looking at others comment on discord I am not confident the approach I took for the debouncing is the correct one.
-I am implementing the software debounce inside the interrupt callback.
-
-
-```
-// if button is pressed
-//if (GPIO_Pin == BTN_PIN) {
-  //if (/* button pressed variable is 0 */) {
-    // Increase the bytton pressed confidence level
-    // Toggle LEDs once button pressed confidence has passed the confidence level
-    // Update the button pressed variable to 1
-  //}
-//} else {
-  //if (/* button pressed variable is 1 */) {
-    // Increase the button released confidence level
-    // Once the button release confidence level has been achieved
-    // update the button pressed variable to 0
-  //}
-//}
-  ```
+In this project I am using interupts for both the GPIO and the Timer.
+In order to handle the debouncing of the board button I am leveraging the timer with a frequency of 10Hz to confirm the state of the button action.
+Finally I am using variable name in order to simplify the type of port and pin used by the different module. With this, each module (gpio, tim) can be easily used for other project.
+I am also keeping the `main.c` as minimal as possible.
